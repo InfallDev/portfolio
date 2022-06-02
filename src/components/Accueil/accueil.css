@@ -1,0 +1,46 @@
+.content{
+    min-width: 400px;
+}
+
+.encart{
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    z-index:-1;
+    opacity:.5;
+    left: 0;
+}
+
+.btn-gradient-amber-blur{
+    height: 4rem;
+    background: linear-gradient(1turn,#d97706, #eab308);
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+    margin-bottom: 10px
+}
+
+.btn-gradient-amber-blur:hover{
+    box-shadow: 0 10px 30px #d97706;
+}
+
+
+.text-gradient{
+    background: -webkit-linear-gradient(0.25turn, #818cf8, #4338ca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+}
+@media (min-width: 800px){
+    #orbit{
+        transform: translateY(-50px);
+    }
+}
+
+@media (max-width: 400px){
+    .content{
+        min-width: 350px;
+    }
+}

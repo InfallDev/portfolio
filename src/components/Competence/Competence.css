@@ -1,0 +1,66 @@
+.container-isometrique{
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+.container-isometrique li{
+    position: relative;
+    padding:15px;
+    width: 15rem;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #a1a1aa;
+    background-color: #1e293b;
+    letter-spacing: 0.05rem;
+    z-index: var(--i);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.container-isometrique li::before{
+    content: '';
+    width: 5rem;
+    height: 100%;
+    background-color: #0f172a;
+    transform-origin: right;
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    transform: skewY(45deg);
+    transition: .5s
+}
+
+.container-isometrique li::after{
+    content: '';
+    width: 100%;
+    height: 5rem;
+    background-color: #222e41;
+    transform-origin: bottom;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    transform: skewX(45deg);
+
+}
+
+.container-isometrique li:hover{
+    background: #4f46e5;
+    transform: translateX(7.5rem);
+    color: white;
+}
+
+.container-isometrique li:hover::before{
+    background: #4338ca;
+}
+
+.container-isometrique li:hover::after{
+    background: #6366f1;
+}
+
+.container-isometrique li:last-child::after{
+    box-shadow: -10rem 10rem 20px #1e293b;
+}
+
